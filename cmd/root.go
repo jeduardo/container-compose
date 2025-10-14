@@ -19,5 +19,5 @@ func Execute() {
 }
 
 func init() {
-
+	rootCmd.PersistentFlags().StringP("file", "f", "docker-compose.yaml", "Compose configuration file")
 }
