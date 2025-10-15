@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/jeduardo/container-compose/internal/container"
 	"github.com/jeduardo/container-compose/pkg/compose"
 	"github.com/spf13/cobra"
 )
@@ -21,7 +22,11 @@ func up(cmd *cobra.Command, args []string) {
 	}
 
 	config := compose.Parse(composeFile)
-	fmt.Println(config)
+	for name, service := range config.Services {
+		serviceName := fmt.Sprintf("%s_%s_%d", "compose", name, 1)
+		fmt.Printf("Creating %s...\n", serviceName)
+		container.Run(serviceName, service.Image)
+	}
 }
 
 func init() {
