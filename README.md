@@ -22,7 +22,7 @@ There are many container-composes around, and this one is mine, built in Go.
 - [ ] config
 - [ ] cp
 - [ ] create
-- [ ] down
+- [-] down
 - [ ] events
 - [ ] exec
 - [ ] export
@@ -45,7 +45,7 @@ There are many container-composes around, and this one is mine, built in Go.
 - [ ] stop
 - [ ] top
 - [ ] unpause
-- [ ] up
+- [-] up
 - [ ] version
 - [ ] volumes
 - [ ] wait
