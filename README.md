@@ -1,7 +1,7 @@
 # container-compose
 
 Yet another [Docker Compose](https://docs.docker.com/compose/) equivalent for
-Apple's[container](https://github.com/apple/container).
+Apple's [container](https://github.com/apple/container).
 
 There are many container-composes around, and this one is mine, built in Go.
 
