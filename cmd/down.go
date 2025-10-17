@@ -25,6 +25,7 @@ func down(cmd *cobra.Command, args []string) {
 	for name, _ := range config.Services {
 		serviceName := fmt.Sprintf("%s_%s_%d", "compose", name, 1)
 
+		// TODO: check if the container is running before trying to stop it
 		fmt.Printf("Stopping %s...", serviceName)
 		err := container.Stop(serviceName)
 		if err != nil {
